@@ -12,9 +12,24 @@ public class ClienteProductorUI {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Cliente - Solicitar Turno");
+        frame.setLayout(new BorderLayout());
+
         JButton boton = new JButton("Solicitar Turno");
+        boton.setFont(new Font("Arial", Font.BOLD, 16));
+        boton.setBackground(new Color(100, 149, 237));
+        boton.setForeground(Color.WHITE);
+
         JTextArea area = new JTextArea(5, 30);
         area.setEditable(false);
+        area.setFont(new Font("Arial", Font.PLAIN, 14));
+        area.setBackground(new Color(245, 245, 245));
+        area.setForeground(Color.DARK_GRAY);
+        JScrollPane scrollPane = new JScrollPane(area);
+        scrollPane.setBorder(BorderFactory.createLineBorder(new Color(211, 211, 211)));
+
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.add(boton, BorderLayout.NORTH);
+        panel.add(scrollPane, BorderLayout.CENTER);
 
         boton.addActionListener(e -> {
             try {
@@ -36,10 +51,10 @@ public class ClienteProductorUI {
             }
         });
 
-        frame.add(boton, BorderLayout.NORTH);
-        frame.add(new JScrollPane(area), BorderLayout.CENTER);
+        frame.add(panel);
         frame.setSize(400, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }
