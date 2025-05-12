@@ -2,6 +2,7 @@
 /var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/VentanillaConsumidor.java
 /var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/ReceptorAvisos.java
 /var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/AvisoPublico.java
+/var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/RabbitMQInitializer.java
 /var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/RabbitMQConnection.java
 /var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/ui/ReceptorAvisosUI.java
 /var/www/html/simulador-colas-banco/src/main/java/com/simulador/banco/ClienteProductor.java

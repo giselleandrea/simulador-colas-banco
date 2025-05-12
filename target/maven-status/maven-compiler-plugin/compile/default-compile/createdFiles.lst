@@ -3,6 +3,7 @@ com/simulador/banco/ui/ClienteProductorUI.class
 com/simulador/banco/ui/VentanillaConsumidorUI.class
 com/simulador/banco/ClienteProductor.class
 com/simulador/banco/VentanillaConsumidor.class
+com/simulador/banco/RabbitMQInitializer.class
 com/simulador/banco/AvisoPublico.class
 com/simulador/banco/RabbitMQConnection.class
 com/simulador/banco/ui/ReceptorAvisosUI.class
